@@ -1,0 +1,29 @@
+@import '../../colors.scss';
+
+
+.carousel .slide {
+  background-color: #effafa;
+}
+
+.banner-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  .banner-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 500px;
+    text-align: left;
+
+    h2 {
+      font-size: 5em;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.2em;
+      line-height: 1.5em;
+      font-weight: 300;
+    }
+  }
+}

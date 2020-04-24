@@ -1,0 +1,64 @@
+@import '../../colors.scss';
+
+.products {
+  margin: 20px 0;
+  ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0 30px;
+
+    li {
+      // border: 1px solid #f1f1f1;
+      transition: 0.2s ease-in-out;
+      &:hover img{
+        box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+        // cursor: pointer;
+      }
+    }
+    img {
+      max-width: 100%;
+    }
+
+    .product-info {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      h2 {
+        font-size: 1.2em;
+        font-weight: 500;
+        text-transform: uppercase;
+        padding-top: 20px;
+      }
+      span {
+        margin: 15px 0;
+        color: tomato;
+        font-weight: 600;
+        font-size: 1.1em;
+      }
+
+      button {
+        padding: 10px 0;
+        background-color: #ff6347;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 600;
+        transition: 0.2s ease-out;
+        width: 80%;
+        border-radius: 5px;
+        font-size: 0.75em;
+        margin: 0 auto;
+        letter-spacing: 1px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        svg {
+          margin-right: 10px;
+          font-size: 1.2em;
+        }
+        &:hover {
+          background-color: #f5806c;
+        }
+      }
+    }
+  }
+}

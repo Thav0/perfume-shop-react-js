@@ -1,0 +1,35 @@
+@import '../../colors.scss';
+
+footer {
+  background-color: $light-blue;
+  margin-top: 80px;
+  padding: 20px 0;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .9em;
+    nav {
+      ul{
+        display: flex;
+
+        li {
+          & + li {
+            margin-left: 10px;
+          }
+          a {
+            color: $light-gray;
+            &:hover {
+              color: #000;
+            }
+          }
+        }
+
+      }
+    }
+
+    .payment-icons {
+      font-size: 2.4em;
+    }
+  }
+}

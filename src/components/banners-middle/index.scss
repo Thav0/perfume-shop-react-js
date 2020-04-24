@@ -1,0 +1,27 @@
+@import '../../colors.scss';
+
+.banners-middle {
+  padding: 30px 0;
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+
+    a{
+      overflow: hidden;
+      img {
+        max-width: 100%;
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: all .5s ease 0s;
+        -o-transition: all .5s ease 0s;
+        transition: all .5s ease 0s;
+        }
+      &:hover img {
+        -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        transform: scale(1.1);
+      }
+    }
+  }
+}
